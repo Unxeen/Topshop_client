@@ -1,0 +1,39 @@
+.product_details_quantity_controller{
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: .5rem;
+}
+.product_details_quantity_controller > i {
+    width: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product_details_quantity_controller > i:hover {
+    /* border: 1px solid; */
+    border-radius: 3px;
+    background-color: rgb(198, 227, 252);
+}
+/* .product_quantity_controller > span {
+    font-size: 1.6rem;
+    user-select: none;
+} */
+.product_details_quantity_controller > input {
+    font-size: 1.6rem;
+    font-family: 'Outfit';
+    /* width: 15px; */
+    /* border: 1px solid; */
+    text-align: center;
+    user-select: none;
+    appearance: none;
+    outline: none;
+    border: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    appearance: none;
+}

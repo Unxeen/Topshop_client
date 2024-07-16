@@ -1,0 +1,122 @@
+
+/* WRAPPERS CSS */
+.product_manage_page{
+    /* height: 100vh; */
+    margin-bottom: 400px;
+}
+.product_manage_container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 16rem;
+    display: flex;
+    flex-direction: column;
+}
+.product_manage_title{
+    display: inline-block;
+    font-size: 3.6rem;
+    font-weight: 500;
+    background: linear-gradient(90deg,#0040BB 0%, #26489A 49%, #001A77 100%);
+    background-clip: text;
+    color: transparent;
+    position: relative;
+    /* z-index: 0; */
+}
+.product_manage_page_topbg{
+    top: 0;
+    left: 0;
+    z-index: 0;
+    position:absolute;
+    width: 100%;
+    height: 40%;
+    background-color: rgb(156, 162, 255, .2);
+}
+
+
+/* TABLE CSS */
+.product_manage_products_table_container{
+    /* background-color: white !important; */
+    margin-top: 5rem;
+}
+.image_table_cell{
+    display: flex;
+    justify-content: center !important;
+    /* align-items: center !important; */
+    padding: 5px !important;
+}
+.products_table_image{
+    max-width: 60px !important;
+    /* height: 60px !important; */
+    object-fit: cover;
+    aspect-ratio: 1/1;
+}
+
+
+
+/* PRODUCT EDIT CSS */
+.product_edit_fields{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(5, 1fr);
+}
+.product_edit_fields_label{
+    grid-column: 1 / span 2;
+    grid-row: 1;
+}
+.product_edit_fields_price{
+    grid-column: 3 / span 1;
+    grid-row: 1
+}
+.product_edit_fields_category{
+    grid-row: 2;
+    grid-column: 1 / span 2;
+}
+.product_edit_fields_stock{
+    grid-row: 2;
+    grid-column: 3 / span 1;
+}
+.product_edit_fields_description{
+    max-height: 156px;
+    grid-row: span 2;
+    grid-column: 4 / span 2;
+}
+.product_edit_fields_description_input{
+    /* max-height: 156px; */
+    min-height: 50px;
+    max-width: 100%;
+    min-width: 100%;
+}
+.product_edit_image_container{
+    position: relative;
+}
+.product_edit_image_change{
+    position: absolute !important;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.03) !important;
+}
+.product_edit_image_change:hover{
+    background-color: rgba(0, 0, 0, 0.06) !important;
+}
+.product_edit_image{
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    object-fit: contain;
+}
+
+
+
+.css-yrdy0g-MuiDataGrid-columnHeaderRow{
+    /* background-color: rgba(0, 26, 119, 0.1) !important; */
+    /* margin-bottom: 1rem; */
+}
+.MuiDataGrid-cell{
+    padding-block: 5px !important;
+    border: none !important;
+}
+
+.product_edit_collapse{
+    background-color: white !important;
+    position: relative;
+    z-index: 1;
+}

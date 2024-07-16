@@ -1,0 +1,102 @@
+.MuiChartsAxis-directionX{
+    display: none;
+}
+.MuiChartsAxis-directionY{
+    display: none;
+}
+
+/* .css-1dfn1mh-MuiChartsSurface-root > g:nth-of-type(4){
+    display: none;
+} */
+.MuiMarkElement-root{
+    display: none;
+}
+
+
+.no_bg{
+    background-color: transparent;
+}
+
+
+.top_banner{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 35vh;
+    z-index: 0;
+    background-color: rgba(133, 226, 255, 0.75);
+}
+
+.dashboard_container{
+    margin: 0 auto;
+    margin-top: 16rem;
+    max-width: 1167px;
+}
+
+/* DASHBOARD TITLE */
+.dashboard_title{
+    display: inline-block;
+    font-size: 3.6rem;
+    font-weight: 500;
+    background: linear-gradient(90deg,#0040BB 0%, #26489A 49%, #001A77 100%);
+    background-clip: text;
+    color: transparent;
+    position: relative;
+    /* z-index: 0; */
+}
+
+
+/* DASHBOARD STATS CHARTS */
+.dashboard_statistics_container{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+}
+.chart_container{
+    position: relative;
+    /* padding: 1rem; */
+    /* border: 1px solid rgb(3, 0, 94); */
+    box-shadow: 0 0px 4px 0px rgba(0, 0, 0, 0.25) ;
+    border-radius: 10px;
+    overflow: hidden;
+    /* margin-top: 20rem; */
+    background-color: rgb(255, 254, 254);
+    width: 361px;
+    height: 238px;
+    /* margin: 0 auto; */
+    /* z-index: 9; */
+    /* background-color: black; */
+}
+.chart_title{
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+    position: absolute;
+    font-size: 2rem;
+    font-weight: 400;
+    padding: 2rem;
+}
+.chart_title > span{
+    font-size: 3.2rem;
+}
+
+
+/* SALES TABLE CSS */
+.latest_sales_container{
+    margin-top: 6.2rem;
+    box-shadow: 0px 1px 4px 0px rgb(0, 0, 0, .15);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10rem;
+}
+
+
+
+.MuiDataGrid-filler{
+    height: 0px !important;
+}
+/* .MuiDataGrid-main,
+.MuiToolbar-root{
+    overflow:  hidden !important;
+} */

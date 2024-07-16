@@ -1,0 +1,154 @@
+/* body{
+    background-color: rgba(235, 254, 255, 1);
+} */
+
+.login_form_container{
+    height: 100vh;
+    padding-top: 15.1rem;
+    background-color: rgba(235, 254, 255, 1);
+}
+
+.login_form{
+    max-width: 36.9rem;
+    /* max-height: 60rem; */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.71);
+    box-shadow: 0px 0px 64px rgba(58, 0, 133, 0.25),
+    0px 0px 32px rgba(58, 0, 133, 0.25),
+    0px 0px 16px rgba(58, 0, 133, 0.25),
+    0px 0px 8px rgba(58, 0, 133, 0.25);
+    gap: 4.5rem;
+    padding: 4.4rem 4.2rem;
+    /* margin-top: 15.1rem; */
+    border-radius: 10px;
+}
+
+
+
+/* LOGIN FORM TOP */
+.login_form_top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.1rem;
+}
+.login_form_top > svg{
+    max-width: 11.8rem;
+    max-height: 11.8rem;
+}
+.login_form_top > h2{
+    font-size: 2.8rem;
+    font-weight: 400;
+    color: rgba(34, 1, 130, 1);
+}
+
+
+
+
+/* LOGIN FORM MIDDLE */
+.login_form_middle{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.login_form_middle_extra{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.remember_check{
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+}
+.remember_check > input[type="checkbox"]{
+    width: 15px;
+    height: 15px;
+
+}
+.remember_check > span{
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: rgba(0, 55, 195, 0.67);
+}
+.forgot_password_link{
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: rgba(0, 3, 10, 1);
+}
+
+
+
+/* LOGIN FORM BOTTOM */
+.login_form_bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+}
+.login_form_bottom > button {
+    border: none;
+    text-align: center;
+    padding-block: 1.2rem;
+    background-color: rgba(37, 14, 129, 1);
+    color: white;
+    border-radius: 10px;
+    font-size: 1.7rem;
+    font-family: 'Outfit';
+    font-weight: 400;
+    cursor: pointer;
+}
+.login_form_bottom > button > i::before{
+    /* width: 19px;
+    height: 19px; */
+    display: inline-block;
+    animation: loading 1s infinite linear !important;
+}
+.login_form_bottom:hover > button{
+    background-color: rgba(37, 14, 129, 0.881);
+}
+.login_form_bottom > p {
+    font-size: 1.3rem;
+    color: rgba(0, 0, 0, 0.57);
+    font-weight: 400;
+}
+.login_form_bottom > p > span{
+    color: rgba(33, 4, 149, 1);
+    font-weight: 400;
+}
+.login_form_bottom > p > span:hover{
+    text-decoration: underline;
+}
+
+
+
+
+.session_expired_message{
+    position: absolute;
+    background-color: rgb(255, 142, 142);
+    padding: 1rem;
+    font-size: 2rem;
+    border-radius: 5px;
+    right: 50%;
+    transform: translateX(50%);
+    top: 10px;
+}
+
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+    }
+}
+
+
+
+@keyframes loading {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

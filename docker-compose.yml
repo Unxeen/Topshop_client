@@ -1,0 +1,26 @@
+services:
+  mysql:
+    image: topshop_db
+    container_name: topshop_db
+    environment:
+      MYSQL_ROOT_PASSWORD: SQLdbayoub24!
+      MYSQL_DATABASE: mysqldb
+    ports:
+      - "3305:3306"
+  backend:
+    container_name: topshop_server
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mysql
+  frontend:
+    container_name: topshop_client
+    build:
+      context: ./topshop_react
+    depends_on:
+      - backend
+    ports:
+      - 5173:5173

@@ -1,0 +1,224 @@
+.product_details_page_wrapper{
+    /* height: 100vh; */
+    margin-bottom: 10rem;
+}
+
+.product_details_container{
+    margin: 0 auto;
+    /* border: 1px solid; */
+    /* max-width: 1196px; */
+    margin-top: 20rem;
+    display: flex;
+    gap: 12.9rem;
+    justify-content: center;
+}
+
+
+
+/* PRODUCT IMAGES */
+.product_details_image_display{
+    display: grid;
+    row-gap: 1.3rem;
+    column-gap: 2.6rem;
+    grid-template-columns: repeat(4, 1fr);
+    min-width: 65rem;
+    max-width: 65rem;
+}
+
+.product_details_main_image{
+    width: 100%;
+    border-radius: 10px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    grid-column: span 4;
+}
+.product_details_secondary_image{
+    width: 100%;
+    border-radius: 10px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    grid-column: span 1;
+}
+
+
+
+
+
+/* PRODUCT DETAILS */
+.product_details_details{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1.6rem;
+}
+.product_details_title{
+    font-size: 4.8rem;
+    font-weight: 600;
+}
+.product_details_owner{
+    font-size: 2.4rem;
+    font-size: 400;
+    margin-top: 1.3rem;
+}
+.product_details_reviews{
+    margin-top: 1.3rem;
+    font-size: 1.3rem;
+}
+.product_details_quantity{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 2.6rem;
+}
+.product_details_quantity > span{
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+.product_details_quantity_controller{
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: .5rem;
+}
+.product_details_quantity_controller > i {
+    width: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product_details_quantity_controller > i:hover {
+    /* border: 1px solid; */
+    border-radius: 3px;
+    background-color: rgb(198, 227, 252);
+}
+/* .product_quantity_controller > span {
+    font-size: 1.6rem;
+    user-select: none;
+} */
+.product_details_quantity_controller > input {
+    font-size: 1.6rem;
+    font-family: 'Outfit';
+    /* width: 15px; */
+    /* border: 1px solid; */
+    text-align: center;
+    user-select: none;
+    appearance: none;
+    outline: none;
+    border: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    appearance: none;
+}
+.product_details_price {
+    margin-top: 2.5rem;
+}
+.product_details_price > sup{
+    font-size: 2.2rem;
+}
+.product_details_price{
+    font-size: 3.2rem;
+    user-select: none;
+}
+.product_details_description{
+    margin-top: 4.5rem;
+    font-size: 2rem;
+    max-width: 40rem;
+}
+.product_details_buttons{
+    margin-top: auto;
+    margin-bottom: 15.6rem;
+    display: flex;
+    gap: 3.2rem;
+    font-size: 2.4rem;
+}
+.add_to_cart,
+.buy_now{
+    padding-block: 1.6rem;
+    min-width: 20rem;
+    border-radius: 5px;
+    display: flex;
+    place-content: center;
+    font-size: 2.4rem;
+    cursor: pointer;
+    border: none;
+    font-family: 'Outfit';
+}
+.add_to_cart{
+    background-color: rgba(219, 183, 255, 1);
+    color: black;
+}
+.add_to_cart_added{
+    /* padding-block: 1.6rem; */
+    min-width: 20rem;
+    max-height: 6.2rem;
+    border-radius: 5px;
+    display: flex;
+    place-content: center;
+    background-color: rgba(219, 183, 255, 1);
+}
+.add_to_cart:hover,
+.add_to_cart_added:hover{
+    background-color: rgba(219, 183, 255, 0.85);
+}
+.buy_now{
+    background-color: rgba(0, 0, 0, 1);
+    color: white;
+}
+.buy_now:hover{
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+
+
+
+/* PRODUCT REVIEWS CONTAINER CSS */
+.product_reviews_container{
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 168px;
+}
+.product_reviews_header{
+    font-size: 3.6rem;
+    font-weight: 500;
+    padding-bottom: 29px;
+    border-bottom: 2px solid rgba(0, 39, 114, 1);
+    margin-bottom: 62px;
+}
+.product_reviews_newreview{
+    max-width: 50%;
+}
+.review_comment_input{
+    /* outline: lightblue 4px solid; */
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Outfit';
+    padding: 5px;
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 100px;
+    max-height: 200px;
+}
+.review_comment_input::placeholder{
+    font-size: 16px;
+    font-weight: 300;
+    /* padding: 5px; */
+    font-family: 'Outfit';
+}
+.review_submit_button{
+    align-self: flex-end;
+    padding: 4px 18px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Outfit';
+    cursor: pointer;
+    border: none;
+    background-color: #00AFDF;
+    color: rgba(254, 238, 255);
+}
+.review_submit_button:hover{
+    filter: contrast(1.1);
+}
