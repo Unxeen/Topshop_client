@@ -1,5 +1,5 @@
 import React from 'react'
-import { Route, Routes } from 'react-router-dom'
+import {Route, Routes } from 'react-router-dom'
 import { UserProvider } from './Context/UserContext'
 import Home from './Home/Home'
 import ProductListing from './ProductListing/ProductListing'

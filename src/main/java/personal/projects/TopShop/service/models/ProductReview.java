@@ -27,6 +27,7 @@ public class ProductReview {
     private Date createdAt;
     private Double rating;
     private String header;
+    @Column(columnDefinition = "TEXT")
     private String comment;
 
 

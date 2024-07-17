@@ -66,7 +66,8 @@ public class SecurityConfig {
                 "http://localhost:3001",
                 "http://localhost:63496",
                 "http://localhost:4173",
-                "http://localhost:8090"
+                "http://localhost:8090",
+                "https://unxeen.github.io/"
                 )
         );
         configuration.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS"));
