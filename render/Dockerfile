@@ -14,4 +14,5 @@ COPY . /app
 WORKDIR /app
 
 # Command to start Docker Compose
-CMD ["docker-compose", "up"]
+CMD ["docker-compose", "-f", "../docker-compose.yml", "up", "--build"]
+
