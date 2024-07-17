@@ -1,0 +1,63 @@
+.header_cart_lp{
+    position: relative;
+    display: flex;
+    /* align-items: flex-start; */
+    gap: 2rem;
+}
+.header_cart_lp_image{
+    object-fit: cover;
+    background-color: rgba(255, 240, 240, .75);
+    width: 90px;
+    height: 90px;
+    border-radius: 5px;
+}
+.header_cart_lp_details{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.header_cart_lp_details_owner{
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.75);
+}
+.header_cart_lp_details_label{
+    max-width: 20rem;
+    margin-bottom: 1.2rem;
+    font-size: 1.6rem;
+    margin-top: .7rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: rgba(0, 0, 0);
+}
+.header_cart_lp_details_extra{
+    /* margin-top: 1.5rem; */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.header_cart_lp_details_extra_price{
+    font-size: 2rem;
+    font-weight: 400;
+}
+.header_cart_lp_details_delete{
+    position: absolute;
+    display: flex;
+    place-content: center;
+    top: 0;
+    right: 0;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 50%;
+    transition: background-color .2s;
+}
+.header_cart_lp_details_delete:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.header_cart_lp_details_delete > svg{
+    width: 100%;
+    height: 100%;
+    color: #000000a0;
+}

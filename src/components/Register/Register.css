@@ -1,0 +1,79 @@
+
+
+.register_form_container{
+    height: 100vh;
+    padding-top: 15.1rem;
+    background-color: rgba(235, 254, 255, 1);
+}
+.register_form{
+    max-width: 62.3rem;
+    margin: 0 auto;
+    padding: 2.7rem 5.4rem;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.71);
+    box-shadow: 0px 0px 64px rgba(58, 0, 133, 0.25),
+    0px 0px 32px rgba(58, 0, 133, 0.25),
+    0px 0px 16px rgba(58, 0, 133, 0.25),
+    0px 0px 8px rgba(58, 0, 133, 0.25);
+    border-radius: 10px;
+}
+.register_form_header{
+    font-size: 2.8rem;
+    font-weight: 400;
+    color: rgba(34, 1, 130, 1);
+    text-align: center;
+}
+.register_form_core{
+    margin-top: 3.2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4.6rem;
+    row-gap: 3.2rem;
+}
+.email_input_container{
+    grid-row: 4;
+    grid-column: span 2;
+}
+
+
+.register_form_bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    margin-top: 6.2rem;
+}
+.register_form_bottom > button {
+    border: none;
+    text-align: center;
+    padding-block: 1.2rem;
+    background-color: rgba(37, 14, 129, 1);
+    color: white;
+    border-radius: 10px;
+    font-size: 1.7rem;
+    font-family: 'Outfit';
+    font-weight: 400;
+    cursor: pointer;
+}
+.register_form_bottom > button > i::before{
+    /* width: 19px;
+    height: 19px; */
+    display: inline-block;
+    animation: loading 1s infinite linear;
+}
+.register_form_bottom:hover > button{
+    background-color: rgba(37, 14, 129, 0.881);
+}
+
+.register_form_bottom > p {
+    font-size: 1.3rem;
+    color: rgba(0, 0, 0, 0.57);
+    font-weight: 400;
+}
+.register_form_bottom > p > span{
+    color: rgba(33, 4, 149, 1);
+    font-weight: 400;
+}
+.register_form_bottom > p > span:hover{
+    text-decoration: underline;
+}
