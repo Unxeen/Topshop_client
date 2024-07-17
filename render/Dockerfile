@@ -5,14 +5,14 @@ FROM docker:19.03.12
 RUN apk add --no-cache docker-compose
 
 # Copy your Docker Compose file
-COPY docker-compose.yml /docker-compose.yml
+COPY ../docker-compose.yml /docker-compose.yml
 
 # Copy all files needed for your services
-COPY . /app
+COPY .. /app
 
 # Set the working directory
 WORKDIR /app
 
 # Command to start Docker Compose
-CMD ["docker-compose", "-f", "../docker-compose.yml", "up", "--build"]
+CMD ["docker-compose", "-f", "docker-compose.yml", "up", "--build"]
 
