@@ -1,6 +1,9 @@
 services:
   mysql:
-    image: topshop_db
+#    image: topshop_db
+    build:
+      context: ./Topshop_db_export
+      dockerfile: Dockerfile
     container_name: topshop_db
     environment:
       MYSQL_ROOT_PASSWORD: SQLdbayoub24!
